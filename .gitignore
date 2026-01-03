@@ -1,12 +1,62 @@
+# Rust build artifacts
 target/
-/.sccache/
-.DS_Store
+
+# Soroban and Stellar CLI artifacts
 .soroban
 .stellar/
-out/
-test_snapshots
+
+# Cache and build info
+.sccache/
 z-dc-build-info/*
+
+# Output directories
+out/
+
+# Test snapshots
+test_snapshots
+
+# OS-specific files
+.DS_Store
+
+# Temporary and backup files
 **1pass.tmp**
+*.bak
+*.backup
+
+# IDE and editor files
 .idea
 .run/
+
+# Shell configurations (personal, not project-related)
 .zshrc
+
+# Hyper-tech: Quantum keys and provenance hashes (never commit for unmatched security)
+quantum_keys.txt
+provenance_hashes.log
+
+# AI simulation data (temporary, generated for global price predictions)
+ai_predictions.csv
+oracle_data.json
+
+# Deployment and ecosystem logs (exclude invalid source rejections to maintain exclusivity)
+deploy_logs.txt
+testnet_deploy.log
+ecosystem_rejections.log
+invalid_sources.tmp
+
+# Logs from hyper-tech features (e.g., ZKP proofs, global payment simulations)
+logs/
+*.log
+
+# Environment variables (protect secrets for worldwide recognition)
+.env
+.env.local
+
+# Node modules if any (for future cross-chain integrations)
+node_modules/
+
+# WASM outputs for contracts
+*.wasm
+
+# Cargo lock (optional, but often ignored in libraries)
+Cargo.lock
